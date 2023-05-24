@@ -1,0 +1,157 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bruno Ace', cursive;
+    font-size: small;
+}
+/*  */
+
+/* INICIO */
+.inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*  */
+
+
+/* LOGO */
+.logo{
+    width: 150px;
+    height: 80px;
+}
+/*  */
+
+/* CARRITO */
+.carrito{
+    width: 30px;
+    height: 30px;
+    margin-left: 250px;
+}
+/*  */
+
+/* ICONOS SESION */
+.sesion{
+    width: 25px;
+    height: 25px;
+}
+
+.intro{
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+/*  */
+
+/* ACORDEON, NAVBAR DESPLEGABLE*/
+.accordion-body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.lista{
+    margin: 15px;
+}
+
+.dropdown-item{
+    font-size: xx-small;
+}
+
+.separador{
+    margin-top: 10px;
+    list-style: none;
+}
+/*  */
+
+/* MEDIA QUERY */
+@media (max-width:900px) {
+    .accordion-body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+@media (max-width:400px) {
+    .inicio{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accordion-body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+/*  */
+
+
+/* BOTON SESION  */
+.botones{
+    display: flex;
+    flex-direction: column;
+}
+/* CLASE BOTON MODIFICADO */
+.button {
+    border: none;
+    display: block;
+    position: relative;
+    padding: 5px;
+    margin: 5px;
+    font-size: small;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    background-color: rgb(255, 187, 204);;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    font-family: inherit;
+    font-weight: 500;
+  }
+  
+  .button span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 2px solid rgb(255, 187, 204);
+  }
+  
+  .button span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: var(--lightgray);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.3s;
+  }
+  
+  .button:hover span::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: rgb(56, 55, 56);
+  }
+  
+  .button:hover {
+    color: white;
+  }
+  
+  .button:active span::before {
+    background: rgb(255, 187, 204);;
+  }
+/*  */
+
+   

@@ -16,6 +16,12 @@
 }
 /*  */
 
+/* NAVBAR */
+.boton{
+    display: flex;
+    flex-direction: row;
+}
+/*  */
 
 /* LOGO */
 .logo1{
@@ -87,9 +93,14 @@
         flex-direction: column;
     }
 
+    .logo1{
+        width: 100%;
+        height: 100px;
+    }   
+
     .intro{
         padding: 0;
-        font-size: xx-small;
+        font-size: small;
     }
 
     .accordion-body{
@@ -99,12 +110,6 @@
     }
 }
 
-@media (max-width:320px) {
-    .logo1{
-        width: 100%;
-        height: 100px;
-    }   
-}
 /*  */
 
 

@@ -69,10 +69,10 @@
 /*  */
 
 /* ICONOS SESION */
-.sesion{
+/* .sesion{
     width: 25px;
     height: 25px;
-}
+} */
 
 .intro{
     padding: 20px;
@@ -197,6 +197,7 @@
 }
 /* CLASE BOTON MODIFICADO */
 .button {
+    
     border: none;
     display: block;
     position: relative;
@@ -209,10 +210,17 @@
     overflow: hidden;
     /* background-color: rgb(255, 187, 204);; */
     background-color: #A32C37;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     z-index: 1;
     font-family: inherit;
     font-weight: 500;
+  }
+
+  .button2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   
   .button span {
@@ -254,6 +262,14 @@
   }
 /*  */
 
+/* ICONOS */
+ion-icon {
+  color: white;
+  width: 25px;
+  height: 25px;
+}
+/*  */
+
 /* BOTON WP */
 .btn-wsp{
     position:fixed;
@@ -288,7 +304,7 @@
   #footer{
     /* background-color: #ffffff; */
     background-color: #F9BECC;
-    color: grey;
+    color: rgb(0, 0, 0);
   }
   
   #acomodar{
@@ -297,10 +313,11 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  
-  footer{
-    background-color: black;
+
+  .blanco{
+    color: #FFF;
   }
+  
   
   #piePagina{
     margin-top: 40px;
@@ -321,3 +338,5 @@
   }
   
   /*  */
+  
+  

@@ -131,7 +131,7 @@
         display: flex;
         /* flex-direction: column; */
     }
-
+    
     /* .logo1{
         width: 100%;
         height: 120px;
@@ -194,6 +194,8 @@
 /* BOTON SESION  */
 .botones{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 /* CLASE BOTON MODIFICADO */
@@ -260,6 +262,104 @@
   
   .button:active span::before {
     background: rgb(255, 187, 204);;
+  }
+
+  /* Boton 3 */
+  a{
+    text-decoration: none;
+  }
+  .button3 {
+    backface-visibility: hidden;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    white-space: nowrap;
+    background: linear-gradient(180deg,#ce8 0%,#592 100%);
+    border-radius: 20px;
+    border: 0.5px solid rgb(255, 255, 255);
+    border-width: 0.5px 0.5px 0.5px 0.5px;
+    padding: 12px 50px 12px 15px;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,0.6),0px 1px 2px rgba(0,0,0,0.5);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Helvetica Neue;
+    font-weight: 900;
+    font-style: normal;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.5)
+  }
+  
+  .button3 span {
+    color: #372;
+    background: #fff;
+    border-radius: 20px;
+    border: 3px solid #372;
+    border-width: 3px 3px 3px 3px;
+    padding: 8px 8px 7px 8px;
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  /* boton4 */
+  .button4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    gap: 8px;
+    height: 32px;
+    width: 120px;
+    border: none;
+    background: #A32C37;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .lable {
+    line-height: 20px;
+    font-size: 17px;
+    color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .svg-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .button4:hover {
+    background: #A32C37;
+  }
+  
+  .button4:hover .svg-icon {
+    animation: rot 0.5s linear infinite;
+  }
+  
+  @keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(-6deg);
+    }
+  
+    50% {
+      transform: rotate(0deg);
+    }
+  
+    75% {
+      transform: rotate(6deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
   }
 /*  */
 
@@ -429,3 +529,99 @@ ion-icon {
    
   /*  */
   
+  /* Formulario */
+  .form-login {
+    width: 450px;
+    height: 340px;
+    background: #F9BECC;
+    margin: auto;
+    margin-top: 180px;
+    margin-bottom: 180px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #A32C37;
+    color: rgb(0, 0, 0);
+  }
+  
+  .form-login h5 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    border: 1px solid #A32C37;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    width: 100%;
+    height: 40px;
+    background: #A32C37;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+  }
+  
+  .form-login p{
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+  }
+  
+  .form-login a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .form-login a:hover {
+    text-decoration: underline;
+  }
+
+  /* responsive */
+
+  @media (max-width: 768px) {
+    .form-login {
+      width: 80%;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-login {
+      width: 90%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding: 10px 20px;
+    }
+  
+    .form-login h5 {
+      font-size: 18px;
+    }
+  
+    .controls {
+      font-size: 12px;
+    }
+  
+    .buttons {
+      height: 30px;
+    }
+  
+    .form-login p {
+      height: 30px;
+    }
+  
+    .form-login a {
+      font-size: 12px;
+    }
+  }
